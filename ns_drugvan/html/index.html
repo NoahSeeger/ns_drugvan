@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drug Cooking</title>
+  </head>
+  <body>
+    <div id="cookingMenu" class="cooking-menu hidden">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <span class="divider"></span>
+      <section class="content">
+        <div class="header">
+          <h1>Meth Kochen</h1>
+          <button class="close-button" onclick="closeMenu()">Schließen</button>
+        </div>
+        <div class="button-group">
+          <div class="">
+            <h3>Manuelles Kochen</h3>
+            <p>
+              Mit dem Manuellen Kochvorgang hast du die komplette Kontrolle über
+              das Kochen. Dies ist zwar anspruchsvoller gibt aber mehr Ertrag.
+              Vorsicht, wenn der Kocher Explodiert, kann die Polizei alamiert
+              werden!
+            </p>
+            <button onclick="startCooking(false)">Manuell Kochen</button>
+          </div>
+          <div class="">
+            <h3>Automatisch Kochen</h3>
+            <p>
+              Mit dem Automatischen Kochvorgang gehen mehr Ampullen kaputt und
+              du bekommst weniger! Dafür kann kein Kochset explodieren und die
+              Polizei wird nicht alamiert.
+            </p>
+            <button onclick="startCooking(true)">Automatisch Kochen</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
